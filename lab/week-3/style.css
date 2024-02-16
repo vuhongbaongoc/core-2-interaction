@@ -1,0 +1,29 @@
+body {
+    background: rgb(168, 180, 168);
+}
+
+div {
+    text-align: center
+} 
+
+h1 { 
+    color:rgb(9, 78, 14);
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+p,li {
+    color: rgb(59, 58, 58);
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 180%;
+    font-weight: 100;
+  }
+
+h2,h3 {
+    color:rgb(9, 78, 14);
+    font-family: sans-serif;
+}
