@@ -1,0 +1,121 @@
+/* BACKGROUND STYLING */
+body {
+    background-color: rgb(226, 226, 226);
+    overflow-x: hidden;
+}
+pre {
+    color:rgb(255, 92, 141)
+}
+#right-arrow {
+    position: relative;
+    width: 50px;
+    padding: 20px;
+    left: 1410px;
+}
+#question-mark {
+	position:absolute;
+    font-family: Roboto Mono;
+	top: 0px;
+	left: 0px;
+	color: rgb(253, 239, 244);
+	font-size:150%;
+	letter-spacing:.75em;
+    z-index: -1; /* bring to front */ 
+}
+
+/* button navigation */
+img{
+    width: 120px;
+}
+#target-section {
+    margin-top: 5px; 
+    padding: 100px;
+  }
+
+/* TEXT STYLING */ 
+p {
+  /* font styling */
+  font-family: Roboto Mono;
+  font-size: 14px;
+  font-weight: 200; 
+  color:rgb(255, 92, 141); 
+
+  /* position styling */
+  padding: 40px; /* adjust height from top */ 
+  width: 960px; /* adjust left & right amount */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+/* highlighted texts*/ 
+.highlight {
+    font-size: 20px; 
+    color: rgb(82, 74, 78);
+  }
+
+ 
+/* Add styles for the floating images */
+.floating-images {
+    position:fixed;
+    top: 50px;
+    left: 0;
+}
+.float-image {
+    position: absolute;
+    animation: floatImage 5s infinite ;
+    opacity: 0.9;
+    pointer-events: none;
+    /* Add specific styles for your images (e.g., width, height, etc.) */
+    width: 40px;
+    height: auto;
+}
+@keyframes floatImage {
+    0% {
+        transform: translate(calc(-50% + 50vw), calc(-50% + 50vh));
+    }
+    25% {
+        transform: translate(calc(-50% + 50vw + 100px), calc(-50% + 50vh + 100px));
+    }
+    50% {
+        transform: translate(calc(-50% + 50vw - 50px), calc(-50% + 50vh + 150px));
+    }
+    75% {
+        transform: translate(calc(-10% + 10vw + 100px), calc(-10% + 10vh - 10px));
+    }
+    100% {
+        transform: translate(calc(-10% + 10vw), calc(-10% + 10vh));
+    }
+}
+
+.floating-images-2 {
+    position:relative;
+    top: 10px;
+    left: 0;
+}
+.float-image-2 {
+    position:absolute;
+    animation: floatImage 10s infinite ;
+    opacity: 0.9;
+    pointer-events: none;
+    width: 100px;
+    height: auto;
+}
+@keyframes floatImage2 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(-50px) translateX(50px); /* Adjust floating distance as needed */
+    }
+}
+
+/* running text for title */ 
+@keyframes runWords {
+    0% {transform: translateX(100%);
+    }
+    100% {transform: translateX(-100%);
+    }
+  }
+
+.running-text {
+     animation: runWords 10s linear infinite;
+  }

@@ -1,0 +1,137 @@
+/* 1. BACKGROUND STYLING */ 
+body {
+    background-color:rgb(226, 226, 226);
+    overflow-x: hidden;
+}
+/* - moving-background */
+@keyframes runWords {
+    0% {transform: translateX(10%);
+    }
+    100% {transform: translateX(-10%);
+    }
+  }
+.running-background {
+    color:rgb(253, 119, 159);
+    animation: runWords 8s linear infinite; 
+    opacity: 5;
+}
+
+/* 2. FOLDER STYLING */
+a {
+    text-decoration: none; /* (this removes the underline from the link) */
+    color: rgb(255, 92, 141);
+  }
+  
+.question {
+    position: absolute;
+    top:200px;
+    left: 50px;
+}
+
+.exclamation {
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+
+.apostrophe {
+    position:absolute;
+    top: 350px;
+    left: 400px;
+}
+
+.period {
+    position:absolute;
+    top: 90px;
+    left:930px;
+}
+
+.comma {
+    position:absolute;
+    top: 400px;
+    left: 1020px;
+}
+
+/* - change color when hover effect*/ 
+.color-change:hover {
+  animation: rainbow 1s infinite;
+  }
+.color-change-2:hover {
+  animation: rainbow 1s infinite;
+  }
+.color-change-3:hover {
+  animation: rainbow 1s infinite;
+  }
+.color-change-4:hover {
+  animation: rainbow 1s infinite;
+  }
+.color-change-5:hover {
+  animation: rainbow 1s infinite;
+  }
+  @keyframes rainbow {
+    20%{color: rgb(255, 151, 220);}
+    40%{color: rgb(57, 57, 57);}
+    60%{color: rgb(186, 186, 186);}
+    80%{color: rgb(157, 157, 157);}
+    100%{color: rgb(247, 196, 228);}
+  }
+
+  
+/* - hidden texts*/ 
+.hidden-text {
+    position: absolute; /* Position the hidden text absolutely */
+    top: 0; /* Adjust positioning as needed */
+    left: 0; /* Adjust positioning as needed */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+.question:hover .hidden-text {
+    opacity: 1;
+  }
+  
+.hidden-text-2 {
+    position: absolute; 
+    top: 200px; 
+    left: 10; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  } 
+.exclamation:hover .hidden-text-2 {
+    opacity: 1;
+  }
+  
+.hidden-text-3 {
+    position: absolute; 
+    top: 200px; 
+    right: 200px; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  } 
+.apostrophe:hover .hidden-text-3 {
+    opacity: 1;
+  }
+
+.hidden-text-4 {
+    position: absolute; 
+    top: 200px; 
+    right: 50px; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  } 
+.period:hover .hidden-text-4 {
+    opacity: 1;
+  }
+
+.hidden-text-5 {
+    position: absolute; 
+    top: 100px; 
+    left: 0; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  } 
+.comma:hover .hidden-text-5 {
+    opacity: 1;
+  }
+
+
+

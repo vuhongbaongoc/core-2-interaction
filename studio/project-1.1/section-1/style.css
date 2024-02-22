@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(226, 226, 226);
+    overflow-x: hidden;
+}
+
+p {
+    /* font styling */
+    font-family: Roboto Mono;
+    font-size: 14px;
+    font-weight: 200; 
+    color:rgb(255, 92, 141); 
+
+    /* position styling */
+    padding: 200px; /* adjust height from top */ 
+    width: 960px; /* adjust left & right amount */
+    margin: 0 auto; /* Center the content horizontally */
+}
+/* highlighted text*/ 
+.highlight {
+    font-size: 20px; 
+    color: rgb(82, 74, 78);
+  }
+.highlight2 {
+    font-size: 40px;
+    text-decoration: none; 
+}
+/*change color when hover*/ 
+.highlight2:hover {
+    animation: rainbow 1s infinite;
+}
+
+@keyframes rainbow {
+    20%{color: rgb(255, 121, 210);}
+    40%{color: rgb(255, 227, 136);}
+    60%{color: rgb(227, 227, 227);}
+    80%{color: rgb(157, 157, 157);}
+    100%{color: rgb(254, 194, 232);}
+}
+
+
+
+/* right arrow styling */
+#right-arrow {
+    position: relative;
+    left: 1310px;
+}
+
+a { 
+    text-decoration: none; 
+}
+
+/* - moving-background */
+@keyframes runWords {
+    0% {transform: translateX(10%);
+    }
+    100% {transform: translateX(-10%);
+    }
+  }
+.running-background {
+    color:rgb(252, 169, 194);
+    animation: runWords 8s linear infinite; 
+    opacity: 5;
+}
+

@@ -1,0 +1,171 @@
+body {
+    background-color: rgb(226, 226, 226);
+    overflow-x: hidden;
+}
+
+#right-arrow {
+    position: relative;
+    width: 50px;
+    padding: 20px;
+    left: 1410px;
+}
+
+#apostrophe {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	color: rgb(255, 192, 211);
+	font-size:150%;
+	letter-spacing:.75em;
+    z-index: -1; /* bring to front */ 
+}
+/* MESSAGE BUBBLE */
+
+/* spin effect */
+@-webkit-keyframes spin {
+    0% { -webkit-transform:rotateY(0deg);}
+    85% { -webkit-transform:rotateY(360deg);}
+    100% { -webkit-transform:rotateY(360deg);}
+
+    }
+    
+@keyframes spin {
+    0% {transform:rotateY(0deg);}
+    85% {transform:rotateY(360deg);}
+    100% {transform: rotateY(360deg);}
+    }
+
+@keyframes visibility {
+    from {opacity:0;}
+    to {opacity:100;}
+    }
+
+/* styling */
+.message-icon {
+    position: relative;
+    display: inline-flex; /* display text inside the circle */
+    justify-content: center; /*center text */ 
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    border-radius: 50%;
+    
+    /*styling for spin effect */ 
+    -webkit-animation: spin 6s ease-in-out infinite;
+    animation: spin 6s ease-in-out infinite;
+    animation-delay: 2s;
+    box-shadow: 0px 0px 20px #ffe8ea;
+    background-image: linear-gradient(to bottom right, #ffe8ea, #ffe8ea);
+    opacity: 0.8;
+
+    /* font styling */
+    font-family: Roboto Mono;
+    font-size: 14px;
+    font-weight: 200; 
+    color:#FF5C8D; 
+  }
+  .letter-hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .message-icon:hover .letter-hidden {
+    opacity: 1;
+  }
+
+  .message-icon-2 {
+    position: relative;
+    display: inline-flex; /* display text inside the circle */
+    justify-content: center; /*center content */ 
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: 130px;
+    
+    /*styling for spin effect */ 
+    -webkit-animation: spin 6s ease-in-out infinite;
+    animation: spin 5s ease-in-out infinite;
+    animation-delay: 0s;
+    box-shadow: 0px 0px 20px #ffe8ea;
+    background-image: linear-gradient(to bottom right, #ffe8ea, #ffe8ea);
+    opacity: 0.8;
+
+    /* font styling */
+    font-family: Roboto Mono;
+    font-size: 14px;
+    font-weight: 200; 
+    color:#FF5C8D; 
+  }
+  .letter-hidden-2 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .message-icon-2:hover .letter-hidden-2 {
+    opacity: 1;
+  }
+
+  .message-icon-3 {
+    position: relative;
+    display: inline-flex; /* display text inside the circle */
+    justify-content: center; /*center content */ 
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: 100px;
+    
+    /*styling for spin effect */ 
+    -webkit-animation: spin 6s ease-in-out infinite;
+    animation: spin 7s ease-in-out infinite;
+    animation-delay: 0s;
+    box-shadow: 0px 0px 20px #ffe8ea;
+    background-image: linear-gradient(to bottom right, #ffe8ea, #ffe8ea);
+    opacity: 0.8;
+
+    /* font styling */
+    font-family: Roboto Mono;
+    font-size: 14px;
+    font-weight: 200; 
+    color:#FF5C8D; 
+  }
+  .letter-hidden-3 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .message-icon-3:hover .letter-hidden-3 {
+    opacity: 1;
+  }
+
+  .message-icon-4 {
+    position: relative;
+    display: inline-flex; /* display text inside the circle */
+    justify-content: center; /*center content */ 
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: 90px;
+    
+    /*styling for spin effect */ 
+    -webkit-animation: spin 6s ease-in-out infinite;
+    animation: spin 7s ease-in-out infinite;
+    animation-delay: 0s;
+    box-shadow: 0px 0px 20px #ffe8ea;
+    background-image: linear-gradient(to bottom right, #ffe8ea, #ffe8ea);
+    opacity: 0.8;
+
+    /* font styling */
+    font-family: Roboto Mono;
+    font-size: 14px;
+    font-weight: 200; 
+    color: #FF5C8D; 
+  }
+  .letter-hidden-4 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .message-icon-4:hover .letter-hidden-4 {
+    opacity: 1;
+  }
+  

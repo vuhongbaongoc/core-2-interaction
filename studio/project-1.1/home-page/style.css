@@ -1,0 +1,29 @@
+body {
+    background-color:rgb(226, 226, 226);
+    overflow-x: hidden;
+}
+pre {
+    color: rgb(255, 92, 141);
+}
+
+.title{
+    color: rgb(255, 92, 141)
+}
+
+/* remove underline from link */
+a {
+    text-decoration: none; 
+}
+
+/* moving-texts */
+@keyframes runWords {
+    0% {transform: translateX(10%);
+    }
+    100% {transform: translateX(-10%);
+    }
+  }
+
+.running-text {
+     animation: runWords 8s linear infinite; /* Adjust the duration and timing function as needed */
+  }
+

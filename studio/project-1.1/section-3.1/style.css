@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(253, 239, 244);
+    overflow-x: hidden;
+}
+h3 {
+  color:rgb(255, 92, 141);
+  /* border */
+  padding: 5px;
+  background-color:rgb(253, 239, 244);
+  margin-top: 1em;
+  border: 1px solid rgb(255, 92, 141);
+  /*postition*/ 
+  margin-left: max((100% - 95ch) * .2, 0ch);
+  max-width: 130ch;
+}
+p {
+    /* font styling */
+    font-family: Roboto Mono;
+    font-size: 14px;
+    font-weight: 200; 
+    color:rgb(255, 92, 141); 
+  
+    /* position styling */
+    padding: 20px; /* adjust height from top */ 
+    width: 960px; /* adjust left & right amount */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  
+#right-arrow {
+    position: relative;
+    width: 50px;
+    padding: 20px;
+    left: 1410px;
+}
+
+#period {
+  font-size:90px;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	color: rgb(255, 92, 141);
+  z-index: -1; /* bring to back */ 
+}
+
+#paragraph1 {
+  /* border */
+  padding: 10px;
+  background-color: rgb(253, 239, 244);
+  margin-top: 2em;
+  border: 1px solid rgb(255, 92, 141);
+  /*postition*/ 
+  margin-left: max((100% - 60ch) * .2, 0ch);
+  max-width: 100ch;
+}
+#paragraph2 {
+  /* border */
+  padding: 10px;
+  background-color: rgb(253, 239, 244);
+  margin-top: 2em;
+  border: 1px solid rgb(255, 92, 141);
+  /*postition*/ 
+  margin-right: max((100% - 60ch) * .2, 0ch);
+  max-width: 80ch;
+}
+#paragraph3 {
+  /* border */
+  padding: 10px;
+  background-color:rgb(253, 239, 244);
+  margin-top: 2em;
+  border: 1px solid rgb(255, 92, 141);
+  /*postition*/ 
+  margin-left: max((100% - 60ch) * .2, 0ch);
+  max-width: 20ch;
+}
+#paragraph4 {
+  /* border */
+  padding: 10px;
+  background-color:rgb(253, 239, 244);
+  margin-top: 2em;
+  border: 1px solid rgb(255, 92, 141);
+  /*postition*/ 
+  margin-left: max((100% - 60ch) * .2, 0ch);
+  max-width: 34ch;
+}
+#paragraph5 {
+  /* border */
+  padding: 10px;
+  background-color:rgb(253, 239, 244);
+  margin-top: 2em;
+  border: 1px solid rgb(255, 92, 141);
+  /*postition*/ 
+  margin-right: max((100% - 60ch) * .2, 0ch);
+  max-width: 65ch;
+}
+#paragraph6 {
+  /* border */
+  padding: 10px;
+  background-color:rgb(253, 239, 244);
+  margin-top: 2em;
+  border: 1px solid rgb(255, 92, 141);
+  /*postition*/ 
+  margin-left: max((100% - 60ch) * .2, 0ch);
+  max-width: 57ch;
+}
+#paragraph7 {
+  /* border */
+  padding: 10px;
+  background-color:rgb(253, 239, 244);
+  margin-top: 2em;
+  border: 1px solid rgb(255, 92, 141);
+  /*postition*/ 
+  margin-left: max((100% - 60ch) * .2, 0ch);
+  max-width: 30ch;
+}

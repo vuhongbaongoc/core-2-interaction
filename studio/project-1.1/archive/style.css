@@ -1,0 +1,133 @@
+/* BACKGROUND STYLING */ 
+body {
+    background-color:rgb(255, 92, 141) ;
+}
+
+/* FOLDER STYLING */
+#left-arrow {
+    padding: 20px
+}
+
+#question {
+    width: 180px;
+    position: absolute;
+    top:300px;
+    left: 150px;
+    
+    /* add shadow */ 
+    box-shadow: 0 10px 8px rgba(162, 0, 95, 0.907); /* add shadow */ 
+    border-radius: 50%; /* Makes the image container a circle */
+    overflow: hidden; /* Ensures the shadow remains within the circle */
+}
+
+#exclamation {
+    width: 180px;
+    position:absolute;
+    top: 50px;
+    left: 500px;
+
+    /* add shadow */ 
+    box-shadow: 0 10px 8px rgba(162, 0, 95, 0.907); /* add shadow */ 
+    border-radius: 50%; /* Makes the image container a circle */
+    overflow: hidden; /* Ensures the shadow remains within the circle */
+}
+
+#apostrophe {
+    width: 180px;
+    position:absolute;
+    top: 500px;
+    left: 600px;
+
+    /* add shadow */ 
+    box-shadow: 0 10px 8px rgba(162, 0, 95, 0.907); /* add shadow */ 
+    border-radius: 50%; /* Makes the image container a circle */
+    overflow: hidden; /* Ensures the shadow remains within the circle */
+}
+
+#period {
+    width: 180px;
+    position:absolute;
+    top: 200px;
+    left:850px;
+
+    /* add shadow */ 
+    box-shadow: 0 10px 8px rgba(162, 0, 95, 0.907); /* add shadow */ 
+    border-radius: 50%; /* Makes the image container a circle */
+    overflow: hidden; /* Ensures the shadow remains within the circle */
+}
+
+#comma {
+    width: 180px;
+    position:absolute;
+    top: 350px;
+    left: 1200px;
+
+    /* add shadow */ 
+    box-shadow: 0 10px 8px rgba(162, 0, 95, 0.907); /* add shadow */ 
+    border-radius: 50%; /* Makes the image container a circle */
+    overflow: hidden; /* Ensures the shadow remains within the circle */
+}
+
+
+
+/* CHANGING IMAGE WHEN HOVER
+- Style for the hover image */
+.hover-image {
+    background-image: url('question2.png'); /* Your hover image */
+    background-size: cover;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+}
+/* - Style for the hover image when hovering */
+.image-link:hover .hover-image {
+    opacity: 1; /* Reveals the hover image when hovering */
+}
+
+.hover-image-2 {
+    background-image: url('exclamation2.png');
+    background-size: cover;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+.image-link-2:hover .hover-image-2 {
+    opacity: 1; /* Reveals the hover image when hovering */
+}
+
+.hover-image-3 {
+    background-image: url('apostrophe2.png');
+    background-size: cover;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+.image-link-3:hover .hover-image-3 {
+    opacity: 1; /* Reveals the hover image when hovering */
+}
+
+.hover-image-4 {
+    background-image: url('period2.png');
+    background-size: cover;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+.image-link-4:hover .hover-image-4 {
+    opacity: 1; /* Reveals the hover image when hovering */
+}
+
+.hover-image-5 {
+    background-image: url('comma2.png');
+    background-size: cover;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+.image-link-5:hover .hover-image-5 {
+    opacity: 1; /* Reveals the hover image when hovering */
+}
+
+.chat {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+}
