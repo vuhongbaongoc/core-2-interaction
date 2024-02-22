@@ -11,9 +11,9 @@ p {
     color:rgb(255, 92, 141); 
 
     /* position styling */
-    padding: 200px; /* adjust height from top */ 
-    width: 960px; /* adjust left & right amount */
-    margin: 0 auto; /* Center the content horizontally */
+    position: absolute; /* Position the hidden text absolutely */
+    top: 300px; /* Adjust positioning as needed */
+    left: 400px; /* Adjust positioning as needed */
 }
 /* highlighted text*/ 
 .highlight {
@@ -37,8 +37,6 @@ p {
     100%{color: rgb(254, 194, 232);}
 }
 
-
-
 /* right arrow styling */
 #right-arrow {
     position: relative;
@@ -56,7 +54,7 @@ a {
     100% {transform: translateX(-10%);
     }
   }
-.running-background {
+#running-background {
     color:rgb(252, 169, 194);
     animation: runWords 8s linear infinite; 
     opacity: 5;

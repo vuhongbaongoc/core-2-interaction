@@ -1,25 +1,71 @@
 body {
-    background-color: rgb(253, 239, 244)
-    ;
+    overflow-x: hidden;
+}
+/*color-changing background*/
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  animation: changeColor 5s infinite;
+}
+.color-box {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes changeColor {
+  0% {
+      background-color: #000000;
+  }
+  20% {
+      background-color: #ffffff;
+  }
+  40% {
+      background-color: #b8d4ff;
+  }
+  60% {
+      background-color: #212121;
+  }
+  80% {
+      background-color: rgb(238, 191, 243);
+  }
+  100% {
+      background-color: #2e2e2e;
+  }
 }
 
 p {
-    /* font styling */
-    font-family: Roboto Mono;
-    font-size: 14px;
-    font-weight: 200; 
-    color:rgb(82, 74, 78); 
+  /* font styling */
+  font-family: Roboto Mono;
+  font-size: 15px;
+  font-weight: 200; 
+  color:rgb(255, 92, 141); 
+
+  /* position styling */
+  padding: 20px; /* adjust height from top */ 
+  width: 1000px; /* adjust left & right amount */
+  margin: 0 auto; /* Center the content horizontally */
+}
   
-    /* position styling */
-    padding: 100px; /* adjust height from top */ 
-    width: 960px; /* adjust left & right amount */
-    margin: 0 auto; /* Center the content horizontally */
-  }
-  
+.highlight {
+  font-size: 60px; 
+  color: rgb(82, 74, 78);
+}
 
   #right-arrow {
     position: relative;
     width: 50px;
     padding: 20px;
     left: 1410px;
+}
+#period {
+  font-size:100px;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	color: rgb(94, 94, 94);
+  opacity: 0.1;
+  z-index: -1; /* bring to back */ 
 }
