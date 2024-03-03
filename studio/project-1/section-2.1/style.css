@@ -1,0 +1,87 @@
+img {
+    position: relative;
+    width: 50px;
+    padding: 20px;
+    left: 1410px;
+}
+body {
+    background-color: rgb(226, 226, 226);
+    overflow-x: hidden;
+    font-family: Roboto Mono;
+}
+p { 
+    font-size: 14px;
+    font-weight: 200; 
+    color:rgb(255, 92, 141);
+    padding: 100px; /* adjust height from top */ 
+    width: 960px; /* adjust left & right amount */
+    margin: 0 auto; /* Center the content horizontally */
+  } 
+.highlight {
+    font-size: 20px; 
+    color: rgb(82, 74, 78);
+}
+
+#pattern {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	color: rgb(255, 192, 211);
+	font-size:150%;
+	letter-spacing:.75em;
+    z-index: -1; /* bring to front */ 
+}
+
+/* text layout */ 
+.layout {
+    padding: 10px;
+    background-color: rgb(226, 226, 226);
+	margin-top: 2em;
+	border: 1px solid rgb(253, 239, 244);
+    border-radius: 10px;
+}
+h2 {
+    color: rgb(82, 74, 78)
+}
+.paragraph1 {
+    /*postition*/ 
+    margin-left: 100px;
+	max-width: 30ch;
+}
+.paragraph2 {
+    /*postition*/ 
+    margin-right: max((100% - 0ch) * .2, 0ch);
+	max-width: 65ch;
+}
+.paragraph3 {
+    /*postition*/ 
+    margin-left: max((100% - 20ch) * .2, 0ch);
+	max-width: 30ch;
+}
+.paragraph4 {
+    /*postition*/ 
+    margin-right: max((100% - 10ch) * .2, 0ch);
+	max-width: 19ch;
+}
+.paragraph5 {
+    /*postition*/ 
+    margin-left: max((200% - 60ch) * .2, 0ch);
+	max-width: 29ch;
+}
+.paragraph6 {
+    /*postition*/ 
+    margin-right: max((100% - 20ch) * .2, 0ch);
+	max-width: 25ch;
+}
+.paragraph7 {
+    /*postition*/ 
+    margin-left: max((100% - 100ch) * .2, 0ch);
+	max-width: 25ch;
+
+}
+.paragraph8 {
+    /*postition*/ 
+    margin-right: max((100% + 100ch) * .2, 0ch);
+	max-width: 40ch;
+}
+

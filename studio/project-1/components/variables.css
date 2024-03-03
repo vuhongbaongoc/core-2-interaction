@@ -1,0 +1,9 @@
+/* variables.css */
+:root {
+    --grey:rgb(226, 226, 226);
+    --darkgrey: rgb(82, 74, 78);
+    --hotpink: rgb(255, 92, 141);
+    --lightpink: rgb(255, 192, 211);
+  
+    --space: 100px;
+  }

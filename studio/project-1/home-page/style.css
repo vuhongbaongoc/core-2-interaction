@@ -24,6 +24,6 @@ a {
   }
 
 .running-text {
-     animation: runWords 8s linear infinite; /* Adjust the duration and timing function as needed */
+     animation: runWords 8s linear infinite;
   }
 

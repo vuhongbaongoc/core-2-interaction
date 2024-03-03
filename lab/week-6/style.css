@@ -1,0 +1,56 @@
+/* html box-sizing: to make border and padding inside the elements*/ 
+* {
+  box-sizing: border-box
+}
+
+/* body styling */ 
+body {
+  background-color: rgb(227, 227, 227);
+  margin: 50px;
+  font:
+    0.9em/1.2 Arial,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+  color: #b13434;
+}
+
+/* heading - my page*/
+.nav {
+  border-bottom: solid 1px #b13434;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+/*grid*/ 
+.container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 300px 300px 300px;
+}
+
+.container > div {
+  border-radius: 10%;
+  padding: 30px;
+  background-color: #b13434;
+  border: 4px solid #ffffff;
+  margin: 30px;
+  height: 300px;
+  width: 300px;
+}
+
+img {
+  position: relative;
+  top:10px;
+  left: 8px;
+}
+
+p {
+  position: fixed;
+  top: 200px;
+  left: 50px;
+  color: rgb(243, 63, 144);
+  font-size: 16px;
+}
