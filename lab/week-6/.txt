@@ -1,0 +1,27 @@
+ACTIVITY LAB WEEK 6
+
+Activity: Display and Position
+
+Make a page that makes use of the following properties:
+display: flex;
+display: grid;
+position: fixed;
+position: relative;
+
+It could be something very practical, like a gridded editorial layout. Or it could be more abstract, like a bookshelf or gallery space.
+
+The only restriction: you cannot use position: absolute. 
+Write a few sentences about why you thought each was a good choice for the particular element on the page. 
+
+Reponse: 
+1. Display:flex
+ I used display: flex to create my menu bar on top of the page, by having 'My Site' and 'About' layed out on the top with each pushed to the left and right side of the page. It is helpful and clear to put any navigations on the website on the top for easy readability. 
+
+2, Display: grid
+ I used this to style my containers I created for each picture in my site. I wanted them to spaced out evenly, with specific numbers so that it is nicely viewed on screen as a gallery space. 
+
+3. Position: fixed
+ I use this to add a text on the left of my page, saying "click on one object", in which is a note that can be read and stay in one place when scrolling. This is handy to use in the future for any annoucements, notices, or important notes that I want to include to my site. 
+
+4. Position: relative
+ I use this to adjust all of my images and icons in each box that I created. I adjusted them to fit in the middle of the text box, to make it looks nicer and fitted. This is useful to style elements where I wanted it to be in the page, breaking them from the normal flow. this way I have more control of designing and placing elements unifyingly. 
