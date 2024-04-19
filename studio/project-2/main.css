@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box
+  }
+
+html {
+    background-color: blue;
+    font-family: Roboto Mono;
+    font-size:10px;
+    padding: 10px;
+}
+
+#material_list {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* heading - EPHEMERA*/
+h1 {
+    font-size: 25px;
+    font-family: Roboto Mono;
+    color: rgb(255, 247, 247);
+    border-bottom: solid 0.5px rgb(255, 247, 247);
+  }
+
+/* side tab */
+p {
+    position: fixed;
+    top: 200px;
+    left: 50px;
+    color:rgb(255, 247, 247);
+    font-size: 16px;
+  }
+  
+
+/* change color when hover */
+.item {
+    display: inline-block;
+    position: absolute;
+    height: 90px;
+    width: 90px;
+}
+.item:hover {
+    /* put your hover styling here */
+    background-color:rgb(255, 0, 255);
+}
+
+/* color */
+.Pink {
+    background-color: pink;
+}
+.Red {
+    background-color: red;
+}
+.Blue {
+    background-color: rgb(111, 255, 243);
+}
+.White {
+    background-color: rgb(255, 247, 247);
+}
+.Cream {
+    background-color: rgb(255, 230, 140);
+}
+.Beige {
+    background-color:rgb(199, 185, 164);
+}
+.Metalic {
+    background-color:rgb(101, 101, 101); 
+}
+.Light_green {
+    background-color:rgb(170, 255, 125);
+}
+
+/* material */ 
+.item .material {
+    visibility:hidden;
+    font-size: 15px; 
+    background-color:azure;
+    color:black;
+    border-radius:10px;
+    padding:5px;
+    top: 80px;
+    left: 50px
+}
+
+.item:hover .material {
+  visibility: visible;
+}
+
+.Vinyl {
+    position:fixed;
+}
+.Plastic {
+    position:fixed;
+}
+.Nylon {
+    position:fixed;
+}
+.Paper {
+    position:fixed;
+}
+.Cotton {
+    position:fixed;
+}
+.Metal {
+    position:fixed;
+}
+.Polyester {
+    position:fixed;
+}
+
+img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make images block-level elements for spacing */
+    margin: 10px auto; /* Add margin for spacing between images */
+    border-radius: 5px; /* Add rounded corners to images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}

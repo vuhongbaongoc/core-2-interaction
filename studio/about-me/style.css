@@ -11,7 +11,6 @@ body {
     0.9em/1.2 Arial,
     Helvetica,
     sans-serif;
-  font-size: 40px;
   color: rgb(243, 63, 144);
 }
 
@@ -79,4 +78,14 @@ p {
   left: 50px;
   color: rgb(243, 63, 144);
   font-size: 16px;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    font-size: 1rem;
+  }
+  .container {
+    flex-wrap: nowrap;
+    width: 90vw;
+  }
 }
