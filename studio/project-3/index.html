@@ -2,16 +2,35 @@
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
     <title> Project 3 </title>
 </head>
 <body>
+    <h> NEW YORK THEATERS</h>
+   
+    <div id="map-container">
+      <div id="points"></div>
+      <img src="map.png" alt="Map">
+    </div>
+      <div id="menu1">    
+        <p class="expanding-text" onclick="filter('upper');"> Upper Manhattan </p> 
+    </div>
+      <div id="menu2"
+        <p class="expanding-text" onclick="filter('midtown');"> Midtown Manhattan </p> 
+    </div>
+      <div id="menu3"
+        <p class="expanding-text" onclick="filter('downtown');"> Downtown Manhattan </p> 
+    </div>
+      <div id="menu4"
+        <p class="expanding-text" onclick="filter('lower');"> Lower Manhattan</p> 
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html
