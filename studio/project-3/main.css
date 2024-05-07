@@ -11,9 +11,6 @@ h{
 }
 
 
-.running-text {
-   animation: runWords 8s linear infinite; /* Adjust the duration and timing function as needed */
-}
 /* menu */
 #menu1 {
   position: fixed;
@@ -73,26 +70,43 @@ h{
   position: absolute;
   z-index: 1000;
 }
+
 /* color element */
 .upper{
   background-color: rgb(0, 13, 107);
   box-shadow: 0 4px 8px rgb(0, 13, 107);
   cursor: pointer;
+  transition: transform 0.2s;
+}
+.upper:hover{
+  transform: scale(2);
 }
 .midtown{
   background-color: rgb(156, 25, 224);
   box-shadow: 0 4px 8px rgb(156, 25, 224);
   cursor: pointer;
+  transition: transform 0.2s;
+}
+.midtown:hover{
+  transform: scale(2);
 }
 .downtown{
   background-color: rgb(255, 93, 162);
   box-shadow: 0 4px 8px rgb(255, 93, 163);
   cursor: pointer;
+  transition: transform 0.2s;
+}
+.downtown:hover{
+  transform: scale(2);
 }
 .lower{
   background-color:rgb(153, 221, 204);
   box-shadow: 0 4px 8px rgb(153, 221, 204);
   cursor: pointer;
+  transition: transform 0.2s;
+}
+.lower:hover{
+  transform: scale(2);
 }
 
 /* filter */

@@ -1672,15 +1672,17 @@ data = [
   }
 ]
 
-function randomInteger(min, max) { //  a function to generate a random value in between two numbers
-  return Math.floor(Math.random() * (max - min + 1)) + min + "px"; // calculate and return the value
+function randomInteger(min, max) { //  this is a named function -- a function to generate a random value in between two numbers
+  return Math.floor(Math.random() * (max - min + 1)) + min + "px"; // calculate and return the value -- + "px" add a string 
 }
 
-const pointsDiv = document.getElementById("points");
+const pointsDiv = document.getElementById("points"); //calling the 'points' div in html
+
 //color each neighbourhood
-data.forEach(location => { //this is a foreach loop that iterates through an object called 'data', location is the variable name will use for each item in data
+data.forEach(location => { // this is an anonymous function -- this is a foreach loop that iterates through an object called 'data', location is the variable name will use for each item in data
   var element = document.createElement('div'); //create new div by default)
   element.classList.add("theater"); //add class theater to div
+
   if(location.location === "Midtown Manhattan") { //if else statement, where we start using the data; we test the location value of each item in data 
     element.classList.add("midtown"); //if location matches midtown manhattan, give it a class "midtown"
     element.style.top = randomInteger(270, 490); // call the randomInteger function and set its result as the Y value of the theater position
@@ -1706,14 +1708,14 @@ data.forEach(location => { //this is a foreach loop that iterates through an obj
   }
   
   //link to each location
-  element.setAttribute("onclick",`link("${location.url}");`); // ${} template literal: put data in a string; to always use `
+  element.setAttribute("onclick",`link("${location.url}");`); // ${} template literal: put data in a string; to always use `  -- setAttribute goes into the 'head' tag in html
 
   // element.innerHTML = `<div class="theater" onclick="window.open('${location.url}','mywindow');" 
   // style="cursor: pointer;"></div>`; //click on dots = link to website
-  pointsDiv.appendChild(element); //get the HTML document, go to the <body> tag, append (meaning "add") a new element called "element"
-
   
-})
+  pointsDiv.appendChild(element); //get the HTML document, go to the <body> tag, append (meaning "add") a new element called "element"
+}
+)
 
   function link(url) {
     window.open(url);
@@ -1723,10 +1725,24 @@ data.forEach(location => { //this is a foreach loop that iterates through an obj
     for(let a of x) {
       a.classList.add("invisible")
     }
+  }
   
-}
+// NOTES: this is a for-of function
+// function toggleClass(x) { // x = to whatever argument is entered when the function is called (the array of numbers)
+//   for(let a of x) { // a = the current number: 1 then 2 then 3, etc.
+//     console.log(a);
+//     // 1
+//     // 2
+//     // 3
+//     // 4
+//     // 5
+//   }
+// }
+
+// toggleClass([1,2,3,4,5]); // call class with an array of numbers
 
 //filter neighbourhood
+// if-esle (conditional statement)
   function filter(neighbourhood) {
     var upperManhattan = document.querySelectorAll('.upper'); //query - get every element on the page that have that class
     var lowerManhattan = document.querySelectorAll('.lower');
@@ -1778,15 +1794,3 @@ data.forEach(location => { //this is a foreach loop that iterates through an obj
   // })
   // .catch(error => console.error('Error:', error));
 
-  
-// to-do:
-// 1. each area - downtown, midtown, uptown = dif color dots
-// display names on left side
-// click on letter = same colored dots appear
-// click on icon = drop down to names+location of each
- 
-// 2. each dot = represent location in map 
-
-// 3. hover over dots = expand dot 
-
-// 4. click on dot = link to theater
