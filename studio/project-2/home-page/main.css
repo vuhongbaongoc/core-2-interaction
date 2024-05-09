@@ -1,0 +1,31 @@
+/* html */ 
+* {
+    box-sizing: border-box
+  }
+
+html {
+    background-color: blue;
+}
+
+p {
+    font-size:40px;
+    font-family: "Rubik Lines";
+    font-weight: 100;
+    color: rgb(255, 247, 247);
+    box-shadow: 0 4px 8px rgb(0, 13, 107);
+    border-radius: 40px;
+    padding: 10px;
+  
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* perfect centering position according to the element's size */
+  }
+
+  /* hover to expand text */
+.expanding-text {
+  transition: transform 0.9s ease; 
+}
+.expanding-text:hover {
+  transform: scale(2); 
+}

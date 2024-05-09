@@ -17,14 +17,6 @@ html {
     height: 100vh;
 }
 
-/* HEADING: EPHEMERA*/
-h1 {
-    font-size: 25px;
-    font-family: Roboto Mono;
-    color: rgb(255, 247, 247);
-    border-bottom: solid 0.5px rgb(255, 247, 247);
-  }
-
 /* change color when hover */
 .item {
     display: inline-block;
@@ -67,8 +59,9 @@ h1 {
 .item .material {
     visibility:hidden;
     font-size: 12px; 
-    background-color:rgb(255, 247, 247);
+    background-color:rgb(251, 242, 0);
     color:black;
+    box-shadow: 0 4px 8px rgb(0, 13, 107);
     width: 500px;
 
     border-radius:10px;
