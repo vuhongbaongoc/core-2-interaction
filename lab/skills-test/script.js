@@ -112,7 +112,6 @@ console.log("Ocucpants of this house is:", houseOccupants);
 
 
 
-
 // let numberOne = 1;
 // let numberTwo = 2;
 
