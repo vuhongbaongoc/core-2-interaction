@@ -1,0 +1,223 @@
+/* html box-sizing: to make border and padding inside the elements*/ 
+* {
+  box-sizing: border-box
+}
+/*color-changing background*/
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  animation: changeColor 20s infinite;
+  z-index: -1;
+}
+.color-box {
+  width: 100%;
+  height: 100%;
+  color: rgba(225, 225, 225, 0.017);
+  font-size: 100px;
+}
+@keyframes changeColor {
+  0% {
+      background-color: #10003f;
+  }
+  50% {
+    background-color: #e9e9e9;
+}
+  100% {
+      background-color:#10003f;
+  }
+}
+
+/* general styling */ 
+body {
+  overflow-x: hidden;
+  margin: 50px;
+
+  font-family: "halyard-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+
+  color: orangered;
+}
+  /* text on left */
+  p {
+    position: fixed;
+    top: 250px;
+    left: 60px;
+    color: orangered;
+    font-size: 16px;
+    width: 150px;
+
+    font-family: "omnes-narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+  /* arrow */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+  }
+  .nav .nav-right {
+  position: fixed;
+  top: 45px;
+  right: 45px;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+
+
+/*grid*/ 
+.container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 200px 200px 200px;
+} 
+/* squares - all-together */
+.container > div {
+  border-radius: 0%;
+  padding: 30px;
+  margin: 30px;
+}
+
+
+/* SQUARES - separately */
+#square1 {
+  background-color: #ff0707;
+  margin: 30px;
+  height: 350px;
+  width: 350px;
+}
+#square2 {
+  background-color:  #ffee07;
+  margin: 30px;
+  height: 350px;
+  width: 350px;
+}
+#square3 { 
+  background-color: #ff37f8 ;
+  margin: 30px;
+  height: 350px;
+  width: 350px;
+}
+#square4 {
+  background-color: #ff5100;
+  margin: 30px;
+  height: 350px;
+  width: 350px;
+}
+#square5 {
+  background-color: #0015ff;
+  margin: 30px;
+  height: 350px;
+  width: 350px;
+}
+#square6 {
+  background-color: #47007c;
+  margin: 30px;
+  height: 350px;
+  width: 350px;
+}
+#square7 {
+  background-color: #41ff37;
+  margin: 30px;
+  height: 350px;
+  width: 350px;
+}
+#square8 {
+  background-color: #000000;
+  margin: 30px;
+  height: 350px;
+  width: 350px;
+}
+#square9 {
+  background-color: #e8e8e8;
+  margin: 30px;
+  height: 350px;
+  width: 350px;
+}
+
+
+/* Image container */
+.hover-container {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+}
+.hover-image {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; /* Initial size of the image */
+  height: auto;
+  z-index: 0; /* Ensure it's below the overlay by default */
+  cursor: pointer;
+}
+
+/* Expand image and center it on the page */
+.hover-image.expand {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  z-index: 1002; /* Ensure the image is on top of the overlay and close button */
+}
+
+/* Dark overlay when the image is expanded */
+#dark-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(94, 94, 94, 0.7); /* Dark, semi-transparent background */
+  z-index: 1000; /* Ensure it covers the whole screen behind the image */
+}
+
+/* Close button styling */
+#close-button {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1003; /* Ensure the close button is on top of everything */
+}
+#close-button:hover {
+  background-color: #f1f1f1;
+}
+/* expanded text styling */
+#expanded-text {
+  display: none; /* Initially hidden */
+  position: fixed;
+  left: 86%;
+  top: 50%; /* Adjust based on how you want it positioned */
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255); /* Text color */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 10px;
+  z-index: 1003; /* Ensure it's on top of the overlay */
+  
+  font-size: 16px;
+  font-family: "omnes-narrow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}

@@ -1,0 +1,95 @@
+/* Global reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make sure the body and html cover the full viewport */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align at the bottom */
+    background-color: #e9e9e9; /* Background color */
+    overflow: hidden; /* Prevent scrolling */
+    
+    /* Color-changing background */
+    animation: changeColor 40s infinite;
+    z-index: -1;
+
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: #10003f;
+    }
+    90% {
+        background-color: #fffdeb;
+    }
+    100% {
+        background-color: #10003f;
+    }
+}
+
+/* Styling for the text */
+.text {
+    position: absolute; /* Positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center text */
+    font-size: 24px; /* Font size */
+    color: orangered; /* Text color */
+    text-align: center; /* Center text alignment */
+    transition: opacity 5s ease; /* Smooth fade-in effect */
+   
+    font-family: "omnes-narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px
+}
+
+/* Arrow */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+
+}
+
+.nav .nav-right {
+    position: fixed;
+    top: 45px;
+    right: 45px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Circle styling */
+.circle {
+    width: 500px; /* Width of the circle */
+    height: 500px; /* Height of the circle */
+    border-radius: 50%; /* Make it circular */
+    background: radial-gradient(circle, 
+        rgba(255, 0, 0, 0.8) 30%, rgba(255, 0, 0, 0.3) 80%, transparent 100%); /* Gradient for glow */
+    position: relative; /* For positioning */
+    animation: moveUp 40s linear infinite; /* Animation to move the circle */
+    z-index: -1;
+    cursor: pointer;
+    
+}
+
+/* Animation to move the circle upward */
+@keyframes moveUp {
+    0% {
+        transform: translateY(0); /* Start at the bottom */
+    }
+    100% {
+        transform: translateY(-100vh); /* Move to the top of the viewport */
+    }
+}

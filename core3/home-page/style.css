@@ -1,0 +1,63 @@
+/* Global reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make sure the body and html cover the full viewport */
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #000871; /* Background color */
+}
+
+/* Initial circle styling */
+.circle {
+  width: 350px; /* Initial width */
+  height: 350px; /* Initial height */
+  background-color: red; /* Circle color */
+  border-radius: 50%; /* Make it circular */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the circle */
+  transition: all 4s ease-in-out; /* Smooth transition */
+  cursor: pointer;
+}
+
+/* Expanded state */
+.circle.expand {
+  width: 200vw;  /* Large enough to cover the screen */
+  height: 200vw; /* Keep it circular */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 60, 0); /* Optional: Change color */
+}
+
+/* Title styling */
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out; /* Smooth fade-in */
+
+  font-family: "halyard-display", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 1;
+  
+}
+
+/* Class to make the title visible */
+.title.show {
+  opacity: 1;
+}
