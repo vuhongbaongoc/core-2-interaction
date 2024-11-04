@@ -19,7 +19,6 @@ body, html {
     z-index: -1;
 
 }
-
 @keyframes changeColor {
     0% {
         background-color: #10003f;
@@ -33,15 +32,29 @@ body, html {
 }
 
 /* Styling for the text */
+p {
+    position: absolute; /* Positioning */
+    top: 20%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center text */
+    color: orangered; /* Text color */
+    text-align: center; /* Center text alignment */
+    
+    font-family: "halyard-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 1;  
+}
 .text {
     position: absolute; /* Positioning */
-    top: 50%; /* Center vertically */
+    top: 60%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center text */
     font-size: 24px; /* Font size */
     color: orangered; /* Text color */
     text-align: center; /* Center text alignment */
-    transition: opacity 5s ease; /* Smooth fade-in effect */
+    /* transition: opacity 5s ease; Smooth fade-in effect */
    
     font-family: "omnes-narrow", sans-serif;
     font-weight: 400;
@@ -55,7 +68,6 @@ body, html {
     justify-content: space-between;
     margin-bottom: 20px;
     padding-bottom: 50px;
-
 }
 
 .nav .nav-right {

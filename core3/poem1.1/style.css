@@ -28,10 +28,10 @@ body {
   margin: 50px;
 
   font-family: "halyard-display", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-size: 60px;
-  color: rgb(244, 244, 244);
+  line-height: 1;  
 }
 
 /* MESSAGE BUBBLE */
@@ -63,8 +63,8 @@ body {
   align-items: center;
   width: 300px;
   height: 300px;
-  top: 100px;
   border-radius: 50%;
+
   
   /*styling for spin effect */ 
   -webkit-animation: spin 10s ease-in-out infinite;
@@ -96,8 +96,8 @@ body {
   align-items: center;
   width: 300px;
   height: 300px;
-  top: 100px;
   border-radius: 50%;
+  top: 100px;
 
   /*styling for spin effect */ 
   -webkit-animation: spin 10s ease-in-out infinite;
@@ -112,7 +112,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-color: #ffffff; 
+  color: #ffffff; 
 }
 .letter-hidden-2 {
   opacity: 0;
@@ -130,7 +130,6 @@ color: #ffffff;
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  top: 100px;
   
   /*styling for spin effect */ 
   -webkit-animation: spin 10s ease-in-out infinite;
@@ -145,7 +144,7 @@ color: #ffffff;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-color: #ffffff; 
+  color: #ffffff; 
 }
 .letter-hidden-3 {
   opacity: 0;

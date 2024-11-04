@@ -36,9 +36,10 @@ body {
   margin: 50px;
 
   font-family: "halyard-display", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-size: 60px;
+  line-height: 1;
 
   color: orangered;
 }
@@ -48,11 +49,11 @@ body {
     top: 250px;
     left: 60px;
     color: orangered;
-    font-size: 16px;
+    font-size: 18px;
     width: 150px;
-
-    font-family: "omnes-narrow", sans-serif;
-    font-weight: 400;
+   
+    font-family: "halyard-display", sans-serif;
+    font-weight: 200;
     font-style: normal;
 
   }
@@ -208,16 +209,18 @@ body {
 #expanded-text {
   display: none; /* Initially hidden */
   position: fixed;
-  left: 86%;
+  left: 85%;
   top: 50%; /* Adjust based on how you want it positioned */
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255); /* Text color */
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-  padding: 10px;
+  padding: 15px;
+  width: 350px;
   z-index: 1003; /* Ensure it's on top of the overlay */
   
-  font-size: 16px;
   font-family: "omnes-narrow", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
 }
