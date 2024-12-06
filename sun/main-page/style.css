@@ -1,0 +1,63 @@
+body {
+ 
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    background-image: url('effect5_bw.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+
+    cursor: none; /* Hide default cursor */
+    position: relative;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-evenly; /* Equal spacing between titles */
+    width: 100%; /* Adjust width as needed */
+}
+
+.title {
+     /* FONT */
+    font-family: "baudot", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(93, 93, 93, 0.3); /* Apply shadow to text */
+    color: #f0f0f0;
+    margin: 0 10px; /* Optional: adjust margin for extra space between titles */
+    text-decoration: none; /* Remove default link styling */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scale */
+}
+.title:hover {
+    color: #3d3d3d; /* Change to desired color on hover */
+    transform: scale(1.1); /* Slightly scale up the title */
+}
+
+
+
+/* Glowing Circle Cursor */
+.cursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffffff, transparent);
+    box-shadow: 0 0 8px 4px rgba(255, 255, 255, 0.8), 
+                0 0 20px 8px rgba(255, 255, 255, 0.5);
+    pointer-events: none; /* Prevent interference with other elements */
+    mix-blend-mode: difference; /* Adds dynamic color interaction */
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+/* Cursor Glow on Hover */
+body:hover .cursor {
+    box-shadow: 0 0 15px 6px rgba(255, 200, 0, 0.8), 
+                0 0 40px 20px rgba(255, 200, 0, 0.5);
+    transform: scale(1.5); /* Slightly enlarge cursor */
+
+}

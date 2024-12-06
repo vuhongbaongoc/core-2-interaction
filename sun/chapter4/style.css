@@ -1,0 +1,123 @@
+
+  /* MENU & NAVIGATION */
+
+  /* General nav styles */
+  .nav-left, .nav-right {
+    font-family: "ibm-plex-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.4); /* Transparent effect */
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle border */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Glow effect */
+    transition: all 0.3s ease-in-out;
+  }
+.nav .nav-right {
+  top: 45px;
+  right: 45px;
+  }
+.nav-left {
+    top: 45px;
+    left: 45px;
+    }
+/* Hamburger menu styling */
+.hamburger-menu {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+  }
+  /* Dropdown container */
+  .dropdown {
+    max-height: 0; /* Initially hidden */
+ opacity: 0; /* Invisible */
+  overflow: hidden; /* Prevent content overflow */
+  position: absolute;
+  top: 50px; /* Adjust to position below the "Home" button */
+  left: 0;
+  width: 150px; /* Adjust the width here */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0; /* Start with no padding to avoid spacing issues */
+  z-index: 9;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+  }
+  /* Dropdown container when active */
+.dropdown.active {
+    max-height: 400px; /* Adjust based on content size */
+    opacity: 1; /* Fully visible */
+    padding: 10px 0; /* Add padding back */
+  }
+  /* Dropdown links */
+  .dropdown-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-family: "ibm-plex-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+  } 
+  .dropdown-link:hover {
+    background-color: #f0f0f0;
+  }
+    /* General Styles */
+body {
+  margin: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 500px;
+  background-image: url('grain.jpeg');
+  top: 80px;
+  font-size: 14px; 
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:50px;
+
+
+}
+
+
+/* Text Styling */
+.hover-text {
+  font-family: "ibm-plex-sans", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      text-align: justify;
+  
+  color: #333; /* Default color */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+/* Hover Effect */
+.hover-text:hover {
+  color: #ededed; /* Hover color */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.text-container-2 {
+  text-align: center;
+}
+
+.highlight {
+  font-size: 50px;
+  font-family: "ibm-plex-serif", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}

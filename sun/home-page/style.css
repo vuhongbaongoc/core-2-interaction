@@ -1,0 +1,103 @@
+body {
+    /* FONT */
+    font-family: "baudot", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    /* GENERLA DOC SET-UP */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    overflow: hidden; /* Prevents scrollbars from appearing */
+
+    /* BACKGROUND */
+    animation: changeBackground 10s linear forwards; /* background animation */
+    background-image: url('background.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+   
+    cursor: none; /* Hide default cursor */
+    position: relative;
+}
+/* Glowing Circle Cursor */
+.cursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffffff, transparent);
+    box-shadow: 0 0 8px 4px rgba(255, 255, 255, 0.8), 
+                0 0 20px 8px rgba(255, 255, 255, 0.5);
+    pointer-events: none; /* Prevent interference with other elements */
+    mix-blend-mode: difference; /* Adds dynamic color interaction */
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+/* Cursor Glow on Hover */
+body:hover .cursor {
+    box-shadow: 0 0 15px 6px rgba(255, 200, 0, 0.8), 
+                0 0 40px 20px rgba(255, 200, 0, 0.5);
+    transform: scale(1.5); /* Slightly enlarge cursor */
+}
+
+
+body:active .custom-cursor {
+    background-color: rgba(0, 0, 0, 1); /* Change color on click */
+}
+h1 {
+    font-size: 78px;
+    white-space: nowrap; /* Ensures the title stays on one line */
+    color: #333;
+    position: absolute; /* Allows positioning for animation */
+    animation: moveAndStop 15s linear forwards; /* One-time animation with final state retained */
+}
+@keyframes moveAndStop {
+    0% {
+        left: -100%; /* Start off-screen on the left */
+    }
+    50% {
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%);
+    }
+    100% {
+        left: 50%; /* Remain at the center */
+        transform: translateX(-50%);
+    }
+}
+
+.grain-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0, 0) 100%);
+    background-size: 3px 3px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4; /* Adjust grain intensity */
+    mix-blend-mode: multiply;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-color: #000000; /* Red-orange */
+    }
+    25% {
+        background-color: #2e2e2e; /* Blue */
+    }
+    50% {
+        background-color: #0a1642; /* Green */
+    }
+    75% {
+        background-color: #6b1010; /* Pink */
+    }
+    100% {
+        background-color: #f6f6f6; /* Back to red-orange */
+    }
+}
+

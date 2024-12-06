@@ -1,0 +1,141 @@
+
+body {
+    padding: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Layout the title and content vertically */
+}
+ /* General nav styles */
+ .nav-left, .nav-right {
+    font-family: "ibm-plex-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.4); /* Transparent effect */
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle border */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Glow effect */
+    transition: all 0.3s ease-in-out;
+  }
+.nav .nav-right {
+  top: 45px;
+  right: 45px;
+  }
+.nav-left {
+    top: 45px;
+    left: 45px;
+    }
+/* Hamburger menu styling */
+.hamburger-menu {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    padding: 0;
+    position: relative;
+    z-index: 10000;
+  }
+  /* Dropdown container */
+  .dropdown {
+    max-height: 0; /* Initially hidden */
+ opacity: 0; /* Invisible */
+  overflow: hidden; /* Prevent content overflow */
+  position: absolute;
+  top: 50px; /* Adjust to position below the "Home" button */
+  left: 0;
+  width: 150px; /* Adjust the width here */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0; /* Start with no padding to avoid spacing issues */
+  z-index: 1;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+  }
+  /* Dropdown container when active */
+.dropdown.active {
+    max-height: 400px; /* Adjust based on content size */
+    opacity: 1; /* Fully visible */
+    padding: 10px 0; /* Add padding back */
+  }
+  /* Dropdown links */
+  .dropdown-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-family: "ibm-plex-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+  } 
+  .dropdown-link:hover {
+    background-color: #f0f0f0;
+  }
+
+body {
+    background-image: url('effect5_bw.png');
+    background-color:#333;
+
+}
+    .title-container {
+        position: absolute;
+        top: 200px; /* Adjust distance from the top */
+        left: 70px;
+        z-index: -1;
+    }
+    .title {
+        font-family: "ibm-plex-sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        font-size: 10rem; /* Large title size */
+        color: #333;
+        margin: 0; 
+        line-height: 190px;
+    }
+
+    .slideshow-container {
+        max-width: 1300px;
+        position:absolute;
+        margin: auto;
+        top:900px;
+        left: 50vh;
+      }  
+      .mySlides {
+        display: none;
+      }
+      img {
+        width: 90%;
+        height: auto;
+      }
+
+
+/* Scrollable box */
+.scrollable-box {
+    position: absolute;
+    align-items: flex-start; /* Align items at the top */
+    width: 600px; 
+    height: 750px;
+    padding: 30px; 
+    background-color: #2a2a2a; 
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-sizing: border-box; /* Ensures padding is included in the box's total size */
+    right: 820px;
+    z-index: -1;
+
+}
+/* Text inside the scrollable box */
+.text-content {
+    line-height: 1.5;
+    font-family: "ibm-plex-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #f4f4f4;
+    text-align: justify;
+}
